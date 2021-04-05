@@ -3,7 +3,7 @@ import React from 'react';
 
 const Noticia = ({noticia}) => {
     // extraer los datos
-    const { urlToImage, url, title, source } = noticia;
+    const { urlToImage, url, description, title, source } = noticia;
 
     const imagen = (urlToImage) ?
         <div className="card-image">
@@ -19,7 +19,7 @@ const Noticia = ({noticia}) => {
 
                 <div className="card-content">
                     <h5>{title}</h5>
-                    {/* <p>{description}</p> */}
+                    <p>{description}</p>
                 </div>
 
                 <div className="card-action">
